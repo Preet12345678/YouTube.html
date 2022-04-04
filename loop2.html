@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>
+      Sign in
+    </title>
+     <link rel="icon" type="image/png" href="https://www.freepnglogos.com/uploads/youtube-play-red-logo-png-transparent-background-6.png">
+    <style>
+                body{
+  background: linear-gradient(to bottom, #de6262, #ffb88c);
+}
+      
+          .topnav{
+    overflow:hidden;
+    background-color:#034f84;
+;
+  }
+  
+  
+    
+  .topnav a{
+    float:left;
+    display:block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    background-color:#034f84;
+  }
+  
+  .topnav a:hover{
+    background-color:orange;
+    color:red;
+  }
+
+    </style>
+  </head>
+  
+  <center>
+  <body>
+    <h1><center><u><strong>Form</strong></u></center></h1>
+           <div class="header">
+<div class="topnav">
+  <a href="YouTube.html">Welcome to YouTube</a>
+  <a href="my yt page.html">Your recommended</a>
+  <a href="loop2.html">Sign in</a>
+    <a href="Youtube gallery.html">Gallery</a>
+
+  </div>
+
+  </div>
+
+    <form name="abc" method="post" action="thanks.html" onsubmit="return validateform()">
+    
+         <table>
+            
+          <tr><td>Name:</td><td> <input type="text" name="name"></td></tr>
+          <tr><td> Password:</td><td><input type="password" name="password"> </td></tr>
+          <tr><td>Retype Password</td><td><input type="password" name="retype"> </td></tr>
+          <tr><td>Submit</td><td> <input type="submit" value="Submit"> </td></tr>
+         </table>
+          
+          
+
+      
+    </form>
+    
+<script>
+  function validateform(){
+    var name=document.abc.name.value;
+    var password=document.abc.password.value;
+    var retype=document.abc.retype.value;
+    
+    if (name==null || name==""){
+      alert("Name can't be blank");
+      return false;
+    }else if(password.length<6){
+      alert("Passwords must be at least 6 characters long.");
+      return false;
+      }
+      
+      else if(password!=retype){
+      alert("Password must be same");
+        return false;
+      }
+      
+  }
+  
+  
+</script>
+  </body>
+  </center>
+</html>
